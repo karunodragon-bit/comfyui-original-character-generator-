@@ -33,8 +33,8 @@ def settings_input_spec():
         "weight_medium": ("FLOAT", {"default": balanced["bust_weights"]["medium"], "min": 0.0, "max": 1.0, "step": 0.01}),
         "weight_large": ("FLOAT", {"default": balanced["bust_weights"]["large"], "min": 0.0, "max": 1.0, "step": 0.01}),
         "weight_xlarge": ("FLOAT", {"default": balanced["bust_weights"]["xlarge"], "min": 0.0, "max": 1.0, "step": 0.01}),
-        "weight_xxlarge": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 1.0, "step": 0.01}),
-        "weight_xxxlarge": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 1.0, "step": 0.01}),
+        "weight_xxlarge": ("FLOAT", {"default": alanced["bust_weights"]["xxlarge"], "min": 0.0, "max": 1.0, "step": 0.01}),
+        "weight_xxxlarge": ("FLOAT", {"default": alanced["bust_weights"]["xxxlarge"], "min": 0.0, "max": 1.0, "step": 0.01}),
         "accessory_probability": ("FLOAT", {"default": balanced["accessory_probability"], "min": 0.0, "max": 1.0, "step": 0.01}),
         "production_mode": ("BOOLEAN", {"default": True}),
     }
