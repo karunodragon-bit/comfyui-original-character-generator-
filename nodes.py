@@ -27,6 +27,7 @@ def settings_input_spec():
         "fixed_eye_color": (list(CATALOG.get_fixed_choices("eyeColor")), {"default": UNFIXED_CHOICE}),
         "fixed_accessory": (list(CATALOG.get_fixed_choices("accessory")), {"default": UNFIXED_CHOICE}),
         "fixed_bust_size": (list(CATALOG.get_bust_choices()), {"default": UNFIXED_CHOICE}),
+        "fixed_outfit": (list(CATALOG.get_fixed_choices("outfit")), {"default": UNFIXED_CHOICE}),  # ← NEW
         "weight_flat": ("FLOAT", {"default": balanced["bust_weights"]["flat"], "min": 0.0, "max": 1.0, "step": 0.01}),
         "weight_small": ("FLOAT", {"default": balanced["bust_weights"]["small"], "min": 0.0, "max": 1.0, "step": 0.01}),
         "weight_medium": ("FLOAT", {"default": balanced["bust_weights"]["medium"], "min": 0.0, "max": 1.0, "step": 0.01}),
@@ -51,6 +52,7 @@ def single_result_tuple(result):
         result["eye_color"],
         result["accessory"],
         result["bust_size"],
+        result["outfit"],            # ← NEW
         result["metadata_json"],
     )
 
@@ -65,6 +67,7 @@ def list_result_tuple(results):
         [result["eye_color"] for result in results],
         [result["accessory"] for result in results],
         [result["bust_size"] for result in results],
+        [result["outfit"] for result in results],   # ← NEW
         [result["metadata_json"] for result in results],
     )
 
@@ -99,6 +102,7 @@ class GenerateOriginalCharacter:
         "STRING",
         "STRING",
         "STRING",
+        "STRING",   # ← NEW (outfit)
     )
     RETURN_NAMES = (
         "prompt",
@@ -109,6 +113,7 @@ class GenerateOriginalCharacter:
         "eye_color",
         "accessory",
         "bust_size",
+        "outfit",          # ← NEW
         "metadata_json",
     )
 
@@ -138,6 +143,7 @@ class GenerateOriginalCharacterList:
         "STRING",
         "STRING",
         "STRING",
+        "STRING",   # ← NEW
     )
     RETURN_NAMES = (
         "prompt_list",
@@ -148,9 +154,11 @@ class GenerateOriginalCharacterList:
         "eye_color_list",
         "accessory_list",
         "bust_size_list",
+        "outfit_list",     # ← NEW
         "metadata_list",
     )
     OUTPUT_IS_LIST = (
+        True,
         True,
         True,
         True,
@@ -324,6 +332,7 @@ class ShowOriginalCharacterSettings:
         payload = dict(settings or {})
         fixed = dict(payload.get("fixed", {}))
         weights = dict(payload.get("weights", {}))
+
         def summarize_fixed(value):
             return UNFIXED_CHOICE if value in (None, "", "none") else value
 
@@ -339,6 +348,7 @@ class ShowOriginalCharacterSettings:
                 f"  eye_color: {summarize_fixed(fixed.get('eye_color', 'none'))}",
                 f"  accessory: {summarize_fixed(fixed.get('accessory', 'none'))}",
                 f"  bust_size: {summarize_fixed(fixed.get('bust_size', 'none'))}",
+                f"  outfit: {summarize_fixed(fixed.get('outfit', 'none'))}",   # ← NEW
                 "weights:",
                 f"  flat: {weights.get('flat', 0.0):.2f}",
                 f"  small: {weights.get('small', 0.0):.2f}",
