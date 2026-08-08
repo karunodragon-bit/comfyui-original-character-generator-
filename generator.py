@@ -162,6 +162,8 @@ class OriginalCharacterGenerator:
         weight_medium,
         weight_large,
         weight_xlarge,
+        weight_xxlarge,
+        weight_xxxlarge,
         accessory_probability,
         production_mode,
     ):
@@ -188,7 +190,9 @@ class OriginalCharacterGenerator:
                 "medium": clamp_probability(weight_medium, 0.0),
                 "large": clamp_probability(weight_large, 0.0),
                 "xlarge": clamp_probability(weight_xlarge, 0.0),
-            },
+                "xxlarge": clamp_probability(weight_xxlarge, 0.0),
+                "xxxlarge": clamp_probability(weight_xxxlarge, 0.0),
+           },
             "accessory_probability": clamp_probability(accessory_probability, 0.0),
             "production_mode": bool(production_mode),
         }
