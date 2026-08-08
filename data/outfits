@@ -1,0 +1,109 @@
+{
+  "key": "outfit",
+  "label": "Outfit",
+  "tagType": "outfit",
+  "description": "character outfit",
+  "includeInName": true,
+  "values": [
+    {
+      "key": "casual",
+      "label": "casual",
+      "name": "casual",
+      "prompt": "casual everyday clothing"
+    },
+    {
+      "key": "school_uniform",
+      "label": "school uniform",
+      "name": "school_uniform",
+      "prompt": "school uniform"
+    },
+    {
+      "key": "business_suit",
+      "label": "business suit",
+      "name": "business_suit",
+      "prompt": "tailored business suit"
+    },
+    {
+      "key": "summer_dress",
+      "label": "summer dress",
+      "name": "summer_dress",
+      "prompt": "light summer dress"
+    },
+    {
+      "key": "evening_dress",
+      "label": "evening dress",
+      "name": "evening_dress",
+      "prompt": "elegant evening dress"
+    },
+    {
+      "key": "athletic",
+      "label": "athletic wear",
+      "name": "athletic_wear",
+      "prompt": "modern athletic wear"
+    },
+    {
+      "key": "fantasy_armor",
+      "label": "fantasy armor",
+      "name": "fantasy_armor",
+      "prompt": "ornate fantasy armor"
+    },
+    {
+      "key": "mage_robe",
+      "label": "mage robe",
+      "name": "mage_robe",
+      "prompt": "fantasy mage robe"
+    },
+    {
+      "key": "gothic",
+      "label": "gothic dress",
+      "name": "gothic_dress",
+      "prompt": "gothic dress with intricate details"
+    },
+    {
+      "key": "kimono",
+      "label": "kimono",
+      "name": "kimono",
+      "prompt": "traditional Japanese kimono"
+    },
+    {
+      "key": "cyberpunk",
+      "label": "cyberpunk",
+      "name": "cyberpunk",
+      "prompt": "futuristic cyberpunk clothing"
+    },
+    {
+      "key": "winter",
+      "label": "winter outfit",
+      "name": "winter_outfit",
+      "prompt": "warm layered winter clothing"
+    },
+    {
+      "key": "penthouse",
+      "label": "penthouse outfit",
+      "name": "penthouse_outfit",
+      "prompt": "penthouse clothing"
+    "values": [
+    "sleek triangle bikini with cleavage",
+    "plunge one piece swimsuit showing cleavage",
+    "cut out one piece with covered key areasn",
+    "halter bikini top with strong cleavage line",
+    "satin bikini top and matching bottoms ",
+    "metallic bikini with push up cleavage ",
+    "bandeau bikini with subtle cleavage ",
+    "wrap front bikini top emphasizing cleavage ",
+    "strappy bikini top with safe coverage ",
+    "deep V monokini with coverage ",
+    "sheer coverup robe over bikini ",
+    "mesh sarong tied at hip over swimsuit ",
+    "short silk robe loosely tied over swimsuit ",
+    "oversized linen shirt open over bikini ",
+    "high cut bikini bottoms",
+    "string tie bikini bottoms",
+    "cheeky cut bikini bottoms ",
+    "gold body chain over bikini top highlighting cleavage",
+    "waist chain jewelry over hips",
+    "light knit crop top thrown over swim set ",
+{
+    }
+  ]
+}
