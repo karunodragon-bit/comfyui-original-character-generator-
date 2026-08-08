@@ -1,8 +1,8 @@
 {
-  "key": "outfit - penthouse",
-  "label": "outfit - penthouse",
+  "key": "penthouse",
+  "label": "penthouse",
   "tagType": "outfit",
-  "description": "presence rate in advanced settings",
+  "description": "penthouse attire",
   "optional": true,
   "includeChance": 0.7,
   "emptyLabel": "none",
@@ -28,5 +28,22 @@
     "gold body chain over bikini top highlighting cleavage",
     "waist chain jewelry over hips",
     "light knit crop top thrown over swim set ",
+{
+    "key": "casual",
+    "prompt": "casual streetwear outfit",
+    "label": "Casual",
+    "name": "casual outfit"
+  },
+  {
+    "key": "combat",
+    "prompt": "tactical combat gear outfit",
+    "label": "Combat",
+    "name": "combat outfit"
+  },
+  {
+    "key": "formal",
+    "prompt": "elegant formal attire",
+    "label": "Formal",
+    "name": "formal outfit",
   ]
 }
