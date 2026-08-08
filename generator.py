@@ -8,7 +8,7 @@ PACKAGE_DIR = Path(__file__).resolve().parent
 DATA_DIR = PACKAGE_DIR / "data"
 SAFE_FALLBACK_PRESET = "Balanced"
 USER_SETTINGS_PRESET = "User settings"
-BUST_KEYS = ("flat", "small", "medium", "large", "xlarge")
+BUST_KEYS = ("flat", "small", "medium", "large", "xlarge", "xxlarge", "xxxlarge")
 UNFIXED_CHOICE = "(not fixed)"
 CATEGORY_FILES = {
     "hairStyle": "hair_styles.json",
