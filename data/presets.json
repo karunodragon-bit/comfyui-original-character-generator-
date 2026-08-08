@@ -2,10 +2,13 @@
   "Balanced": {
     "bust_weights": {
       "flat": 0.18,
-      "small": 0.28,
-      "medium": 0.26,
+      "small": 0.27,
+      "medium": 0.25,
       "large": 0.18,
       "xlarge": 0.1
+      "xxlarge": 0.1,
+      "xxxlarge": 0.1
+
     },
     "accessory_probability": 0.58
   },
@@ -16,6 +19,8 @@
       "medium": 0.16,
       "large": 0.08,
       "xlarge": 0.04
+      "xxlarge": 0.0,
+      "xxxlarge": 0.0
     },
     "accessory_probability": 0.38
   },
@@ -23,9 +28,11 @@
     "bust_weights": {
       "flat": 0.08,
       "small": 0.16,
-      "medium": 0.28,
-      "large": 0.28,
+      "medium": 0.27,
+      "large": 0.27,
       "xlarge": 0.2
+      "xxlarge": 0.1,
+      "xxxlarge": 0.1
     },
     "accessory_probability": 0.72
   },
@@ -35,7 +42,9 @@
       "small": 0.1,
       "medium": 0.2,
       "large": 0.3,
-      "xlarge": 0.36
+      "xlarge": 0.34
+      "xxlarge": 0.1,
+      "xxxlarge": 0.1
     },
     "accessory_probability": 0.86
   }
