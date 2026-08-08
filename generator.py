@@ -431,8 +431,8 @@ class OriginalCharacterGenerator:
         weight_medium,
         weight_large,
         weight_xlarge,
-        weight_xxlarge=weight_xxlarge,
-        weight_xxxlarge=weight_xxxlarge,
+        weight_xxlarge,
+        weight_xxxlarg,
         accessory_probability,
         production_mode,
     ):
