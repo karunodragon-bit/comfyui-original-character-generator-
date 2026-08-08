@@ -16,6 +16,7 @@ CATEGORY_FILES = {
     "eyeColor": "eye_colors.json",
     "accessory": "accessories.json",
     "bustSize": "bust_sizes.json",
+    "outfit": "outfits.json",
 }
 
 
@@ -155,6 +156,7 @@ class OriginalCharacterGenerator:
         fixed_eye_color,
         fixed_accessory,
         fixed_bust_size,
+        fixed_outfit,
         weight_flat,
         weight_small,
         weight_medium,
@@ -178,6 +180,7 @@ class OriginalCharacterGenerator:
                 "eye_color": self.normalize_fixed_choice(fixed_eye_color),
                 "accessory": self.normalize_fixed_choice(fixed_accessory),
                 "bust_size": self.normalize_fixed_choice(fixed_bust_size),
+                "outfit": self.normalize_fixed_choice(fixed_outfit),
             },
             "weights": {
                 "flat": clamp_probability(weight_flat, 0.0),
@@ -340,12 +343,15 @@ class OriginalCharacterGenerator:
         else:
             bust_size = self.choose_weighted_bust(rng, categories["bustSize"], distribution)
 
+        outfit = self.choose_generic(rng, categories["outfit"], fixed.get("outfit"))
+
         selected_entries = [
             {"category": categories["hairStyle"], "option": hair_style},
             {"category": categories["hairColor"], "option": hair_color},
             {"category": categories["eyeColor"], "option": eye_color},
             {"category": categories["accessory"], "option": accessory},
             {"category": categories["bustSize"], "option": bust_size},
+            {"category": categories["outfit"], "option": outfit},
         ]
 
         raw_base_prompt = str(settings.get("base_prompt", "") or "").strip()
@@ -379,6 +385,7 @@ class OriginalCharacterGenerator:
                 "eye_color": eye_color["label"] if eye_color else "",
                 "accessory": accessory["label"] if accessory else categories["accessory"]["emptyLabel"],
                 "bust_size": bust_size["label"] if bust_size else "",
+                "outfit": outfit["label"] if outfit else categories["outfit"]["emptyLabel"],
             },
         }
 
@@ -391,6 +398,7 @@ class OriginalCharacterGenerator:
             "eye_color": eye_color["label"] if eye_color else "",
             "accessory": accessory["label"] if accessory else categories["accessory"]["emptyLabel"],
             "bust_size": bust_size["label"] if bust_size else "",
+            "outfit": outfit["label"] if outfit else categories["outfit"]["emptyLabel"],
             "metadata_json": json.dumps(metadata, ensure_ascii=False, sort_keys=True),
         }
 
@@ -413,6 +421,7 @@ class OriginalCharacterGenerator:
         fixed_eye_color,
         fixed_accessory,
         fixed_bust_size,
+        fixed_outfit,
         weight_flat,
         weight_small,
         weight_medium,
@@ -430,6 +439,7 @@ class OriginalCharacterGenerator:
             fixed_eye_color=fixed_eye_color,
             fixed_accessory=fixed_accessory,
             fixed_bust_size=fixed_bust_size,
+            fixed_outfit=fixed_outfit,
             weight_flat=weight_flat,
             weight_small=weight_small,
             weight_medium=weight_medium,
@@ -439,3 +449,4 @@ class OriginalCharacterGenerator:
             production_mode=production_mode,
         )
         return self.generate_from_settings(seed, settings)
+
