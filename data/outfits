@@ -109,6 +109,33 @@
         "gold body chain worn over swim top",
         "waist chain jewelry worn at the hips",
         "light knit crop top layered over swimwear"
+    },
+    {
+      "key": "penthouse",
+      "label": "penthouse outfit",
+      "name": "penthouse_outfit",
+      "prompt": "stylish penthouse leisurewear",
+      "values": [
+        "sleek triangle swim top with safe coverage",
+        "plunge‑style one‑piece swimsuit with secure coverage",
+        "cut‑out one‑piece with covered key areas",
+        "halter swim top with defined neckline",
+        "satin swim set with coordinated top and bottoms",
+        "metallic swim set with supportive structure",
+        "bandeau swim top with modest neckline",
+        "wrap‑front swim top with balanced coverage",
+        "strappy swim top with safe coverage",
+        "deep‑V monokini with appropriate coverage",
+        "sheer cover‑up robe worn over swimwear",
+        "mesh sarong tied at the hip over swimwear",
+        "short silk robe worn over swimwear",
+        "oversized linen shirt layered over swimwear",
+        "high‑cut swim bottoms",
+        "string‑tie swim bottoms",
+        "cheeky‑cut swim bottoms",
+        "gold body chain worn over swim top",
+        "waist chain jewelry worn at the hips",
+        "light knit crop top layered over swimwear"
     ]
     }
   ]
