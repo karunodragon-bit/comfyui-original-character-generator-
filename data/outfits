@@ -83,60 +83,126 @@
       "name": "winter_outfit",
       "prompt": "warm layered winter clothing"
     },
+
     {
-      "key": "penthouse",
-      "label": "penthouse outfit",
-      "name": "penthouse_outfit",
-      "prompt": "stylish penthouse leisurewear",
-      "values": [
-        "sleek triangle swim top with safe coverage",
-        "plunge‑style one‑piece swimsuit with secure coverage",
-        "cut‑out one‑piece with covered key areas",
-        "halter swim top with defined neckline",
-        "satin swim set with coordinated top and bottoms",
-        "metallic swim set with supportive structure",
-        "bandeau swim top with modest neckline",
-        "wrap‑front swim top with balanced coverage",
-        "strappy swim top with safe coverage",
-        "deep‑V monokini with appropriate coverage",
-        "sheer cover‑up robe worn over swimwear",
-        "mesh sarong tied at the hip over swimwear",
-        "short silk robe worn over swimwear",
-        "oversized linen shirt layered over swimwear",
-        "high‑cut swim bottoms",
-        "string‑tie swim bottoms",
-        "cheeky‑cut swim bottoms",
-        "gold body chain worn over swim top",
-        "waist chain jewelry worn at the hips",
-        "light knit crop top layered over swimwear"
+      "key": "penthouse_triangle_swim",
+      "label": "penthouse triangle swim",
+      "name": "penthouse_triangle_swim",
+      "prompt": "sleek triangle swim top with safe coverage"
     },
     {
-      "key": "penthouse",
-      "label": "penthouse outfit",
-      "name": "penthouse_outfit",
-      "prompt": "stylish penthouse leisurewear",
-      "values": [
-        "sleek triangle swim top with safe coverage",
-        "plunge‑style one‑piece swimsuit with secure coverage",
-        "cut‑out one‑piece with covered key areas",
-        "halter swim top with defined neckline",
-        "satin swim set with coordinated top and bottoms",
-        "metallic swim set with supportive structure",
-        "bandeau swim top with modest neckline",
-        "wrap‑front swim top with balanced coverage",
-        "strappy swim top with safe coverage",
-        "deep‑V monokini with appropriate coverage",
-        "sheer cover‑up robe worn over swimwear",
-        "mesh sarong tied at the hip over swimwear",
-        "short silk robe worn over swimwear",
-        "oversized linen shirt layered over swimwear",
-        "high‑cut swim bottoms",
-        "string‑tie swim bottoms",
-        "cheeky‑cut swim bottoms",
-        "gold body chain worn over swim top",
-        "waist chain jewelry worn at the hips",
-        "light knit crop top layered over swimwear"
-    ]
+      "key": "penthouse_plunge_one_piece",
+      "label": "penthouse plunge one-piece",
+      "name": "penthouse_plunge_one_piece",
+      "prompt": "plunge-style one-piece swimsuit with secure coverage"
+    },
+    {
+      "key": "penthouse_cutout_one_piece",
+      "label": "penthouse cut-out one-piece",
+      "name": "penthouse_cutout_one_piece",
+      "prompt": "cut-out one-piece with covered key areas"
+    },
+    {
+      "key": "penthouse_halter",
+      "label": "penthouse halter swim",
+      "name": "penthouse_halter",
+      "prompt": "halter swim top with defined neckline"
+    },
+    {
+      "key": "penthouse_satin_swim",
+      "label": "penthouse satin swim set",
+      "name": "penthouse_satin_swim",
+      "prompt": "satin swim set with coordinated top and bottoms"
+    },
+    {
+      "key": "penthouse_metallic_swim",
+      "label": "penthouse metallic swim set",
+      "name": "penthouse_metallic_swim",
+      "prompt": "metallic swim set with supportive structure"
+    },
+    {
+      "key": "penthouse_bandeau",
+      "label": "penthouse bandeau swim",
+      "name": "penthouse_bandeau",
+      "prompt": "bandeau swim top with modest neckline"
+    },
+    {
+      "key": "penthouse_wrap_front",
+      "label": "penthouse wrap-front swim",
+      "name": "penthouse_wrap_front",
+      "prompt": "wrap-front swim top with balanced coverage"
+    },
+    {
+      "key": "penthouse_strappy_swim",
+      "label": "penthouse strappy swim",
+      "name": "penthouse_strappy_swim",
+      "prompt": "strappy swim top with safe coverage"
+    },
+    {
+      "key": "penthouse_deep_v_monokini",
+      "label": "penthouse deep-V monokini",
+      "name": "penthouse_deep_v_monokini",
+      "prompt": "deep-V monokini with appropriate coverage"
+    },
+    {
+      "key": "penthouse_coverup_robe",
+      "label": "penthouse cover-up robe",
+      "name": "penthouse_coverup_robe",
+      "prompt": "sheer cover-up robe worn over swimwear"
+    },
+    {
+      "key": "penthouse_mesh_sarong",
+      "label": "penthouse mesh sarong",
+      "name": "penthouse_mesh_sarong",
+      "prompt": "mesh sarong tied at the hip over swimwear"
+    },
+    {
+      "key": "penthouse_silk_robe",
+      "label": "penthouse silk robe",
+      "name": "penthouse_silk_robe",
+      "prompt": "short silk robe worn over swimwear"
+    },
+    {
+      "key": "penthouse_linen_shirt",
+      "label": "penthouse linen shirt",
+      "name": "penthouse_linen_shirt",
+      "prompt": "oversized linen shirt layered over swimwear"
+    },
+    {
+      "key": "penthouse_high_cut",
+      "label": "penthouse high-cut swim",
+      "name": "penthouse_high_cut",
+      "prompt": "high-cut swim bottoms"
+    },
+    {
+      "key": "penthouse_string_tie",
+      "label": "penthouse string-tie swim",
+      "name": "penthouse_string_tie",
+      "prompt": "string-tie swim bottoms"
+    },
+    {
+      "key": "penthouse_cheeky_cut",
+      "label": "penthouse cheeky-cut swim",
+      "name": "penthouse_cheeky_cut",
+      "prompt": "cheeky-cut swim bottoms"
+    },
+    {
+      "key": "penthouse_gold_body_chain",
+      "label": "penthouse gold body chain",
+      "name": "penthouse_gold_body_chain",
+      "prompt": "gold body chain worn over swim top"
+    },
+    {
+      "key": "penthouse_waist_chain",
+      "label": "penthouse waist chain",
+      "name": "penthouse_waist_chain",
+      "prompt": "waist chain jewelry worn at the hips"
+    },
+    {
+      "key": "penthouse_knit_crop",
+      "label": "penthouse knit crop top",
+      "name": "penthouse_knit_crop",
+      "prompt": "light knit crop top layered over swimwear"
     }
   ]
 }
